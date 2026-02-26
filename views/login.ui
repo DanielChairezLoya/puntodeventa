@@ -10,6 +10,12 @@
     <height>835</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>50</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
@@ -21,6 +27,9 @@
        <font>
         <pointsize>26</pointsize>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(&quot;img/BlackMW&quot;);</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
@@ -84,10 +93,10 @@
         </widget>
        </item>
        <item>
-        <widget class="QTextEdit" name="textEdit">
-         <property name="maximumSize">
+        <widget class="QLineEdit" name="txt_username">
+         <property name="minimumSize">
           <size>
-           <width>16777215</width>
+           <width>0</width>
            <height>50</height>
           </size>
          </property>
@@ -107,18 +116,15 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit">
+        <widget class="QLineEdit" name="txt_password">
          <property name="minimumSize">
           <size>
            <width>0</width>
            <height>50</height>
           </size>
          </property>
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>100</height>
-          </size>
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
          </property>
         </widget>
        </item>
